@@ -20,5 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/login/{services}', 'Auth\SocialLoginController@redirect' );
-Route::get('/login/{services}/callback', 'Auth\SocialLoginController@callback' );
+Route::get('/login/{service}', 'Auth\SocialLoginController@redirect' );
+Route::get('/login/{service}/callback', 'Auth\SocialLoginController@callback' );
